@@ -16,7 +16,7 @@ práticas de programação, PSR e documentação oficial do Laravel.
 ## Instalação
 - GIT
 ```sh
-git remote add origin https://github.com/ricardoguntzell/dashboard.git
+git clone https://github.com/ricardoguntzell/dashboard.git
 ```
 
 - COMPOSER
