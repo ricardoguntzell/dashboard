@@ -1,0 +1,79 @@
+/**
+  Variables
+*/
+/**
+COLOR SYSTEM
+ */
+/** Auto generate buttons, gradients */
+/**
+  COMPONENTS
+*/
+.text-green {
+  color: #36BA9B;
+}
+
+.text-blue {
+  color: #39AED9;
+}
+
+.text-yellow {
+  color: #F5B946;
+}
+
+.text-red {
+  color: #D94352;
+}
+
+.text-orange {
+  color: #F4645F;
+}
+
+.text-gray-light {
+  color: #CCCCCC;
+}
+
+.gradient {
+  background-size: 200% auto;
+  transition-duration: 0.5s;
+}
+.gradient:hover {
+  background-position: right center;
+}
+
+.gradient-green {
+  background-image: linear-gradient(to right, #36BA9B 0%, #2d9a81 50%, #36BA9B 100%);
+}
+
+.gradient-blue {
+  background-image: linear-gradient(to right, #39AED9 0%, #2699c4 50%, #39AED9 100%);
+}
+
+.gradient-yellow {
+  background-image: linear-gradient(to right, #F5B946 0%, #f3aa1f 50%, #F5B946 100%);
+}
+
+.gradient-red {
+  background-image: linear-gradient(to right, #D94352 0%, #ca2939 50%, #D94352 100%);
+}
+
+.gradient-orange {
+  background-image: linear-gradient(to right, #F4645F 0%, #f13f39 50%, #F4645F 100%);
+}
+
+.gradient-gray-light {
+  background-image: linear-gradient(to right, #CCCCCC 0%, #b8b8b8 50%, #CCCCCC 100%);
+}
+
+.transition {
+  transition-duration: 0.3s;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-link.gradient-gray-light.text-white.active {
+  background: #778899;
+  color: #D9CB9E !important;
+  font-weight: bold;
+}

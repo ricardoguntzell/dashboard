@@ -1,0 +1,38 @@
+$font-family: 'Open Sans';
+
+/**
+COLOR SYSTEM
+ */
+$color-white: #FFFFFF;
+$color-gray-light: #CCCCCC;
+$color-gray-medium: #555555;
+$color-gray: #999999;
+$color-gray-dark: #333333;
+$color-black: #000000;
+
+$color-green: #36BA9B;
+$color-blue: #39AED9;
+$color-yellow: #F5B946;
+$color-red: #D94352;
+$color-orange: #F4645F;
+
+$button-hover-type: 'darken'; // darken || lighten
+$button-hover-amount: 8%;
+
+$gradient-hover-type: 'darken'; // darken || lighten
+$gradient-hover-amount: 8%;
+
+/** Auto generate buttons, gradients */
+$theme-colors: () !default;
+$theme-colors: map_merge(
+        (
+            "green": $color-green,
+            "blue": $color-blue,
+            "yellow": $color-yellow,
+            "red": $color-red,
+            "orange": $color-orange,
+            "gray-light":$color-gray-light
+        ), $theme-colors
+);
+
+$hover-duration: 0.3s;

@@ -1,0 +1,20 @@
+/**
+  Variables
+*/
+@import 'variables';
+/**
+  COMPONENTS
+*/
+@import "components/text";
+@import "components/gradient";
+@import "components/transitions";
+
+* {
+    font-family: $font-family, sans-serif;
+}
+
+.nav-link.gradient-gray-light.text-white.active {
+    background: #778899;
+    color: #D9CB9E !important;
+    font-weight: bold;
+}
