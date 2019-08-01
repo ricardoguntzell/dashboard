@@ -33,6 +33,16 @@
                     </nav>
                 </header>
 
+                <div class="response-user">
+                    @if(session()->exists('message'))
+                        @message(['color' => session()->get('color')])
+                        <div class="text-left">
+                            <i class="fas fa-check-circle m-1"></i>{{session()->get('message')}}
+                        </div>
+                        @endmessage
+                    @endif
+                </div>
+
                 <div class="">
                     <table id="dataTable" class="table table-striped table-bordered"
                            style="width: 100% !important;">

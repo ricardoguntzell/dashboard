@@ -94,6 +94,11 @@ class UserController extends Controller
     {
         $user = User::where('url_friendly', $urlFriendly)->first();
 
+        if (!isset($user)) {
+            return redirect()->route('admin.users.index')
+                ->with(['color' => 'danger', 'message' => "Ooops, cliente não existente."]);
+        }
+
         return view('admin.users.edit',
             [
                 'user' => $user
